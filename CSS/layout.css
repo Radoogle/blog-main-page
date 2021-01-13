@@ -45,13 +45,14 @@
 
 
 .page {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
+  display:                grid;
+  grid-template-columns:  3fr 1fr;
   grid-template-areas:
-  "header  header"
-  "nav     nav"
-  "content sidebar"
-  "footer  footer";
+                          "header  header"
+                          "nav     nav"
+                          "content sidebar"
+                          "footer  footer";
+  gap:                    30px 0;            /* column gap = 30px and row gap = 0 */
 }
 
 

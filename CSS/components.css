@@ -74,6 +74,7 @@
 
 .content {
   background-color: var(--bg-secondary);
+  padding:          0 0 0 15.31%; /* 0.93% = 15px, left 15.31% = 245px at 1600px width */
 }
 
   .content__header {
@@ -100,6 +101,7 @@
 
 .side {
   background-color: var(--bg-secondary);
+  padding:          0 15.31% 0 0;  /* 0.93% = 15px, right 15.31% = 245px at 1600px width */
 }
 
 
