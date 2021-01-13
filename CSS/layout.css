@@ -52,7 +52,6 @@
                           "nav     nav"
                           "content sidebar"
                           "footer  footer";
-  gap:                    30px 0;            /* column gap = 30px and row gap = 0 */
 }
 
 
@@ -83,5 +82,6 @@
 \*------------------------------------*/
 
 .page {
-  gap: .7em;
+  gap: 0 30px;   /* row gap = 0 and column gap = 30px */
 }
+
