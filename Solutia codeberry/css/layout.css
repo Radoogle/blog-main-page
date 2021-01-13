@@ -1,0 +1,98 @@
+/**
+ * PREZENTARE GENERALĂ
+ *
+ * Acest fișier gestionează schema (layout) website-ului. În loc să seteze
+ * schemele componentelor pe rând, creem un sistem separat
+ * care are un singur obiectiv—de a spune fiecărui element
+ * ce dimensiune trebuie să aibă și unde trebuie să apară.
+ *
+ * Class-ele declarate aici pot fi atribuite fiecărui container
+ * pentru a le aduce la dimensiunile corecte și să se comporte corect.
+ */
+
+
+/**
+ * CUPRINS
+ *
+ * SCHEMĂ
+ * Elemente.................Regula de dimensionare a container-ilor.
+ * Modifiers..............Regulile care modifică schema, ex., float-uri.
+ *
+ * CULOARE
+ * Culoare orizontale....Regulile whitespace-ului orizontal dintre container-i.
+ *
+ * HELPERI
+ * Clearfix...............Un class care poate fi atribuit floated container-ilor.
+ */
+
+
+
+
+
+/*------------------------------------*\
+  #SCHEMĂ
+\*------------------------------------*/
+
+/**
+ * 1. Când avem nevoie de un culoar (gutter) vertical între doi container-i
+ * folosim aceste classe. Acestea se dimensionează automat, astfel că
+ * sar peste jumătate din whitespace dintre două elemente. Când două elemente
+ * sunt plasate alături, între ele apare automat un
+ * culoar de dimensiuni adecvate. Pentru un efect complet, trebuie să float-ăm
+ * un element spre stânga iar pe celălalt spre dreapta, cu clasele adecvate.
+ *
+ * 2. Dacă trebuie să centrezi orizontal un element, folosește acest class.
+ *
+ * 3. Dacă trebuie să float-ezi un element, aceste clase sunt prietenii tăi.
+ * Nu uita să atribui .clearfix class
+ * din secțiunea HELPERI a container-ului.
+ */
+
+ .layout__item--full-width           	{ width: 100%; }
+
+ .layout__item--70-percent           	{ width: 70%; }
+ 
+ .layout__item--66-percent-w-gutter  	{ width: calc(66.6% - 1.071rem); } /* [1] */
+ 
+ .layout__item--50-percent-w-gutter  	{ width: calc(50%   - 1.071rem); } /* [1] */
+ 
+ .layout__item--33-percent-w-gutter  	{ width: calc(33.3% - 1.071rem); } /* [1] */
+ 
+ 
+ .layout__item--content-w-sticked-footer { min-height: calc(100vh - 80px); }
+ 
+ 
+ .layout__item--centered-horizontally { /* [2] */
+   margin-left:  auto;
+   margin-right: auto;
+ }
+ 
+ 
+ .layout__item--floated-left  { float: left; } /* [3] */
+ .layout__item--floated-right { float: right; }/* [3] */
+ 
+ 
+ 
+ 
+ 
+ /*------------------------------------*\
+   #CULOARE
+ \*------------------------------------*/
+ 
+ .gutter--horizontal-small { margin-bottom: 2.142rem; }
+ 
+ .gutter--horizontal-big   { margin-bottom: 2.857rem; }
+ 
+ 
+ 
+ 
+ 
+ /*------------------------------------*\
+   #HELPERI
+ \*------------------------------------*/
+ 
+ .clearfix:after {
+   content:  "";
+   display:  table;
+   clear:	both;
+ }
