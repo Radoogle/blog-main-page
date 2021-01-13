@@ -65,13 +65,13 @@
 \*------------------------------------*/
 
 header, footer {
-  padding:       5px;
+  padding:       0;
   margin:        0;
 }
 
 
 nav, aside {
-  padding:       3px;
+  padding:       0;
   margin:        0;
 }
 
@@ -97,7 +97,7 @@ h2, h3 { font-size: 12px; }
 
 html {
   font-size:   20px;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   color:       var(--primary-font-color);
 }
 
@@ -113,3 +113,20 @@ img {
   width:  50px;
   height: 50px;
 }
+
+
+
+
+
+
+/*------------------------------------*\
+  #BASE BACKGROUND-COLOR
+\*------------------------------------*/
+
+html {
+  background-color: var(--bg-primary);
+}
+
+
+
+

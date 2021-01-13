@@ -27,7 +27,7 @@
   display:          flex;
   justify-content:  center;
   align-items:      center;
-  height:           80px;
+  height:           4rem;
 }
 
   .main-head__btn {
@@ -35,23 +35,32 @@
     text-align:       center;
     vertical-align:   middle;
     text-decoration:  none;
-    font:             normal normal bold 12px/15px Montserrat;
-    letter-spacing:   2.4px;
-    line-height:      40px;
+    font-size:        .6rem;
+    font-weight:      bold;
+    letter-spacing:   .12rem;
+    line-height:      2rem;
     color:            var(--secondary-font-color);
     background-color: var(--bg-secondary);
-    border:           2px solid #FFFFFF;
-    border-radius:    24px;
-    width:            10%;
-    height:           40px;
+    border:           .1rem solid #FFFFFF;
+    border-radius:    1.2rem;
+    width:            8rem;
+    height:           2rem;
+    position: absolute;
+    /* margin-right: 19%; */
+    left: 15.31%;
   }
 
   .main-head__logo {
     color:           var(--thirdly-font-color);
     text-transform:  uppercase;
     text-decoration: none;
+    /* margin-left:     -19%; */
   }
 
+    .main-head__logo-img {
+      width:  9rem;
+      height: 2.5rem;
+    }
 
 
 
@@ -75,12 +84,12 @@
 \*------------------------------------*/
 
 .content {
-  background-color: var(--bg-secondary);
-  padding:          0 0 0 25.13%; /* padding-left 25.13% = 245px at 1600px width  */
+  /* background-color: var(--bg-primary); */
+  padding:          0 0 0 25.13%; /* padding-left */
 }
 
   .content__header {
-    margin-left: 3em;
+    /* margin-left: 3em; */
   }
 
 
@@ -102,8 +111,8 @@
 \*------------------------------------*/
 
 .side {
-  background-color: var(--bg-secondary);
-  padding:          0 41.17% 0 0;  /* padding-right 15.31% = 245px at 1600px width / 0.93% = 15px   */
+  /* background-color: var(--bg-primary); */
+  padding:          0 41.17% 0 0;  /* padding-right  */
 }
 
 
