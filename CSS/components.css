@@ -25,9 +25,12 @@
 .main-head {
   background-color: var(--bg-header);
   display:          flex;
-  justify-content:  center;
+  justify-content:  space-between;
+  flex-wrap:        wrap;
   align-items:      center;
   height:           4rem;
+  padding:          0 15%;
+  width:            100vw;
 }
 
   .main-head__btn {
@@ -45,16 +48,13 @@
     border-radius:    1.2rem;
     width:            8rem;
     height:           2rem;
-    position: absolute;
-    /* margin-right: 19%; */
-    left: 15.31%;
   }
 
   .main-head__logo {
     color:           var(--thirdly-font-color);
     text-transform:  uppercase;
     text-decoration: none;
-    /* margin-left:     -19%; */
+    margin-right:    37.14%; /* in order to keep it in the middle: (100vw - 15% - 15% - self-width) / 2*/
   }
 
     .main-head__logo-img {
