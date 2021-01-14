@@ -20,8 +20,6 @@
 .main-head {
   grid-area:  header;
   place-self: center strech;
-  /* width: 70%;
-  place-self: center; */
 }
 
 

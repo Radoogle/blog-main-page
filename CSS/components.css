@@ -30,7 +30,6 @@
   align-items:      center;
   height:           4rem;
   padding:          0 15%;
-  width:            100vw;
 }
 
   .main-head__btn {
@@ -54,7 +53,7 @@
     color:           var(--thirdly-font-color);
     text-transform:  uppercase;
     text-decoration: none;
-    margin-right:    37.14%; /* in order to keep it in the middle: (100vw - 15% - 15% - self-width) / 2*/
+    margin-right:    37.14%; /* to keep it in the middle: (100vw - 15% - 15% - self-width) / 2*/
   }
 
     .main-head__logo-img {
@@ -72,7 +71,28 @@
   background-color: var(--bg-secondary);
   display:          flex;
   flex-direction:   row;
+  justify-content:  center;
+  flex-wrap:        wrap;
+  align-items:      center;
+  height:           4rem;
+  padding:          0 15%;
 }
+
+  .main-nav__btn {
+    text-decoration:  none;
+    text-transform:   uppercase;
+    font-size:        .6rem;
+    font-weight:      bold;
+    letter-spacing:   .12rem;
+    line-height:      .75rem;
+    color:            var(--primary-font-color);
+    background-color: var(--bg-secondary);
+    padding:          0 1.5rem;
+  }
+
+  .main-nav__btn:hover {
+    color: var(--secondary-font-color);
+  }
 
 
 
