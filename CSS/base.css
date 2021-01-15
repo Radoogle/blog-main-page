@@ -76,16 +76,15 @@ nav, aside {
 }
 
 
+.credits {
+  display: inline-block;
+}
 
-
-
-/*------------------------------------*\
-  #HEADINGS
-\*------------------------------------*/
-
-h1     { font-size: 40px; }
-
-h2, h3 { font-size: 12px; }
+.credits,
+.post-title,
+.post-text {
+  margin: 0 0 .75rem 0; /* margin-bottom */
+}
 
 
 
@@ -99,9 +98,38 @@ html {
   font-size:      20px;
   letter-spacing: .12rem;
   line-height:    .75rem;
-  font-family:    Montserrat, sans-serif;
+  font-family:    'Montserrat', sans-serif;
   color:          var(--primary-font-color);
 }
+
+
+
+
+
+/*------------------------------------*\
+  #HEADINGS
+\*------------------------------------*/
+
+.post-title {
+  font-size:   2rem;
+  font-weight: bold;
+  line-height: 2.5rem; 
+  margin-top:  0;
+}
+
+h2, h3 { font-size: 12px; }
+
+
+
+
+/*------------------------------------*\
+  #PARAGRAPHS
+\*------------------------------------*/
+
+.post-text {
+  line-height: 1.5rem; 
+}
+
 
 
 

@@ -82,7 +82,7 @@
     text-decoration:  none;
     text-transform:   uppercase;
     font-size:        .6rem;
-    font-weight:      800;
+    font-weight:      bold;
     letter-spacing:   .12rem;
     line-height:      .75rem;
     color:            var(--primary-font-color);
@@ -108,24 +108,73 @@
 
 .content {
   /* background-color: var(--bg-primary); */
-  padding:          2rem 0 2rem 25.13%; /* padding-left */
 }
 
-  .content__header {
-    /* margin-left: 3em; */
+  .content-post {
+    /* min-height:     100vh; */
+    padding:        3rem 3rem 2.5rem 3rem;
+    letter-spacing: 0;
   }
 
+  .featured-post {
+    color:      var(--thirdly-font-color);
+    background: var(--bg-secondary);    /* fallback background */
+    background: url(../assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg) no-repeat;
+    background-size: cover;
+  }
 
-  .primary-btn {
-    background-color: var(--bg-secondary);
-    border-width:     2px;
-    border-style:     solid;
-    border-color:     var(--btn-main-color);
-    border-radius:    24px;
-    color:            var(--secondary-font-color);
-    padding:          4px;
+  .featured-post-credits {
+    font-size:      .6rem;
+    text-transform: uppercase;
+    letter-spacing: .12rem;
+  }
+
+  .thumbnail-post {
+
+  }
+
+  .content-post-credits {
+    font-size:      .6rem;
+    text-transform: uppercase;
+    color:          var(--small-font-color);
+  }
+
+  
+
+
+/*------------------------------------*\
+  #MAIN CONTENT BUTTONS
+\*------------------------------------*/
+
+.btn {
+  display:          inline-block;
+  text-transform:   uppercase;
+  text-align:       center;
+  vertical-align:   middle;
+  text-decoration:  none;
+  font-size:        .6rem;       /* 12px */
+  font-weight:      bold;
+  letter-spacing:   .12rem;      /* 2.4px */
+  /* line-height:      .75rem; */    /* 15px */
+  line-height:      2rem;
+  background-color: transparent;
+  border:           .1rem solid; /* 2px */
+  border-radius:    1.2rem;      /* 24px */
+  width:            8rem;        /* 160px */
+  height:           2rem;         /* 40px */
+}
+
+.primary-btn {
+    border-color:     var(--thirdly-font-color);
+    color:            var(--thirdly-font-color);
     cursor:           pointer;
   }
+
+.secondary-btn {
+
+}
+
+
 
 
 
@@ -135,7 +184,6 @@
 
 .side {
   /* background-color: var(--bg-primary); */
-  padding:          2rem 41.17% 2rem 0;  /* padding-right  */
 }
 
 
@@ -146,11 +194,11 @@
   #ADVERTISEMENT
 \*------------------------------------*/
 
-.ad {
+/* .ad {
   background-color: var(--bg-alert);
   color:            var(--secondary-font-color);
   text-align:       center;
-}
+} */
 
 
 

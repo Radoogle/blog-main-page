@@ -30,11 +30,23 @@
 
 .content {
   grid-area: content;
+  padding:   2rem 0 2rem 25.13%; /* padding-left */
 } 
+
+  .content-post {
+    background-color: var(--bg-secondary);
+    border-radius:    .75rem;
+    margin-bottom:    1.5rem;
+  }
+
+  .another-post {     /* the last post in list */
+    margin-bottom: 0;
+  }
 
 
 .side {
   grid-area: sidebar;
+  padding:   2rem 41.17% 2rem 0;  /* padding-right  */
 }
 
 
