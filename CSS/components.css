@@ -130,8 +130,17 @@
   }
 
   .thumbnail-post {
-
+    padding:  1rem;
   }
+
+
+  /* p ~ ul -> Selects every <ul> element that are preceded by a <p> element
+  
+  selecting only the second(last) thumbnail-post */
+
+  /* .thumbnail-post ~ .thumbnail-post { 
+    margin-left: 1.5rem;
+  } */
 
   .content-post-credits {
     font-size:      .6rem;
@@ -162,16 +171,17 @@
   border-radius:    1.2rem;      /* 24px */
   width:            8rem;        /* 160px */
   height:           2rem;         /* 40px */
+  cursor:           pointer;
 }
 
 .primary-btn {
     border-color:     var(--thirdly-font-color);
     color:            var(--thirdly-font-color);
-    cursor:           pointer;
   }
 
 .secondary-btn {
-
+  border-color:     var(--btn-main-color);
+  color:            var(--secondary-font-color);
 }
 
 

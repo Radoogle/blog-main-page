@@ -39,6 +39,11 @@
     margin-bottom:    1.5rem;
   }
 
+  .thumbnail-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .another-post {     /* the last post in list */
     margin-bottom: 0;
   }
@@ -90,10 +95,12 @@
 
 
 /*------------------------------------*\
-  #WHITESPACES
+  #WHITESPACES AND GRID GAPS
 \*------------------------------------*/
 
-.page {
+.page,
+.thumbnail-wrapper {
   gap: 0 30px;   /* row gap = 0 and column gap = 30px */
 }
+
 
