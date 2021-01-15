@@ -82,8 +82,9 @@ nav, aside {
 
 .credits,
 .post-title,
-.post-text {
-  margin: 0 0 .75rem 0; /* margin-bottom */
+.post-text,
+.thumbnail-title {
+  margin: 0 0 .75rem 0; /* margin-bottom 15px */
 }
 
 
@@ -110,14 +111,24 @@ html {
   #HEADINGS
 \*------------------------------------*/
 
-.post-title {
+.post-title { /* h1 */
   font-size:   2rem;
   font-weight: bold;
   line-height: 2.5rem; 
   margin-top:  0;
 }
 
-h2, h3 { font-size: 12px; }
+.thumbnail-title { /* h3 */
+  font-size:      .6rem; /* 12px */
+  font-weight:    bold;
+  line-height:    .75rem;  /* 15px */
+  margin-top:     0;
+  color:          var(--secondary-font-color);
+  text-transform: uppercase;
+  letter-spacing: .12rem; /* 2.4px */
+}
+
+h2 { font-size: 12px; }
 
 
 
@@ -130,6 +141,12 @@ h2, h3 { font-size: 12px; }
   line-height: 1.5rem; 
 }
 
+.thumbnail-text {
+  font-size:      .7rem;
+  line-height:    1rem;
+  letter-spacing: 0;
+  color:          var(--primary-font-color);
+}
 
 
 
@@ -140,9 +157,10 @@ h2, h3 { font-size: 12px; }
 \*------------------------------------*/
 
 img {
-  width:         120px;
-  height:        120px;
-  border-radius: 10px;
+  width:         6rem;
+  height:        6rem;
+  border-radius: .5rem;
+  object-fit:    cover;
 }
 
 

@@ -133,19 +133,14 @@
     padding:  1rem;
   }
 
-
-  /* p ~ ul -> Selects every <ul> element that are preceded by a <p> element
-  
-  selecting only the second(last) thumbnail-post */
-
-  /* .thumbnail-post ~ .thumbnail-post { 
-    margin-left: 1.5rem;
-  } */
-
   .content-post-credits {
     font-size:      .6rem;
     text-transform: uppercase;
     color:          var(--small-font-color);
+  }
+
+  .thumbnail-title {
+    
   }
 
   
