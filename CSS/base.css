@@ -16,12 +16,34 @@
  * SETTINGS
  * Variables............Globally-available variables.
  * Box-sizing...........Better default `box-sizing`.
+ * Base font size.......Setting the base font size.
  * Margins..............Top and bottom margins global values.
+ * Anchors..............Implicit link settings.
  *
  * BASE STYLES
- * Headings.............H1-H2 styles.
- * Base font............Base font style.
+ * Headings.............H1, H2, H3 styles.
+ * Links, buttons.......Base styles.
+ */
+
+
+
+
+/*------------------------------------*\
+  #SETTINGS
+\*------------------------------------*/
+
+/**
+ * 1. Un model mai rezonabil de box-sizing
  *
+ * 2. Această regulă modifică valoarea base font-size,
+ * cu care sunt comparate toate unitățile rem units.
+ *
+ * 3. Normalize.css setează o margine top și bottom pentru aceste elemente.
+ * Asta ar interfera cu layout-ul nostru, deci, cu această regulă o suprascriem.
+ *
+ * 4. Dăm un bottom-margin general principalelor noastre elemente tipografice
+ * care ne va asigura că toate marginile orizontale vor fi la fel
+ * în mod implicit, pe tot site-ul. Apoi, în unele cazuri, putem să suprascriem.
  */
 
 
@@ -52,9 +74,17 @@
   #BOX-SIZING
 \*------------------------------------*/
 
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box;} /* [1] */
+
+
+
+
+
+/*------------------------------------*\
+  #BASE FONT SIZE
+\*------------------------------------*/
+
+html { font-size: 20px;} /* [2] */
 
 
 
@@ -64,29 +94,36 @@
   #MARGINS
 \*------------------------------------*/
 
-header, footer {
-  padding:       0;
-  margin:        0;
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0; /* [3] */
 }
 
 
-nav, aside {
-  padding:       0;
-  margin:        0;
-}
-
-
-.credits {
+/* .credits {
   display:        inline-block;
   font-weight:    bold;
   letter-spacing: .12rem;
-}
+} */
 
-.credits,
+/* .credits,
 .post-title,
 .post-text,
-.thumbnail-title {
-  margin: 0 0 .75rem 0; /* margin-bottom 15px */
+.thumbnail-title { */
+h1,
+h2,
+h3,
+p {
+  margin-bottom: .75rem; /* [4]] */
+}
+
+
+a {
+  text-decoration: none;
+  cursor:          pointer;
 }
 
 
@@ -94,24 +131,18 @@ nav, aside {
 
 
 /*------------------------------------*\
-  #BASE FONT
+  #BASE STYLES
 \*------------------------------------*/
 
-html {
-  font-size:      20px;
-  letter-spacing: .12rem;
-  line-height:    .75rem;
+
+
+body {
   font-family:    'Montserrat', sans-serif;
   color:          var(--primary-font-color);
+  /* letter-spacing: .12rem;
+  line-height:    .75rem; */
 }
 
-
-
-
-
-/*------------------------------------*\
-  #HEADINGS
-\*------------------------------------*/
 
 .post-title { /* h1 */
   font-size:   2rem;
