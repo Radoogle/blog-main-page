@@ -139,9 +139,9 @@
     color:          var(--small-font-color);
   }
 
-  .thumbnail-title {
-    
-  }
+.side-card {
+  background-color: var(--bg-secondary);
+}
 
   
 

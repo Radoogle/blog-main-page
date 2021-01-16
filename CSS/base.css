@@ -148,6 +148,7 @@ h2 { font-size: 12px; }
   line-height:    1rem;
   letter-spacing: 0;
   color:          var(--primary-font-color);
+  margin:         0;
 }
 
 
