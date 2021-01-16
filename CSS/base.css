@@ -23,6 +23,8 @@
  * BASE STYLES
  * Headings.............H1, H2, H3 styles.
  * Links, buttons.......Base styles.
+ * Images...............dimensions, radius and object-fit
+ * Paragraphs...........will see.
  */
 
 
@@ -103,11 +105,7 @@ ul {
 }
 
 
-/* .credits {
-  display:        inline-block;
-  font-weight:    bold;
-  letter-spacing: .12rem;
-} */
+
 
 /* .credits,
 .post-title,
@@ -134,34 +132,40 @@ a {
   #BASE STYLES
 \*------------------------------------*/
 
-
-
 body {
-  font-family:    'Montserrat', sans-serif;
-  color:          var(--primary-font-color);
+  font-family:      'Montserrat', sans-serif;
+  color:            var(--primary-font-color);
+  background-color: var(--bg-primary);
   /* letter-spacing: .12rem;
   line-height:    .75rem; */
 }
 
 
-.post-title { /* h1 */
-  font-size:   2rem;
-  font-weight: bold;
-  line-height: 2.5rem; 
-  margin-top:  0;
-}
+h1 { font-size: 2rem; }
 
-.thumbnail-title { /* h3 */
-  font-size:      .6rem; /* 12px */
+h2,
+h3,
+a { 
+  font-size:      .6rem; 
   font-weight:    bold;
-  line-height:    .75rem;  /* 15px */
-  margin-top:     0;
-  color:          var(--secondary-font-color);
   text-transform: uppercase;
-  letter-spacing: .12rem; /* 2.4px */
+  letter-spacing: .12rem;
 }
 
-h2 { font-size: 12px; }
+
+
+
+
+/*------------------------------------*\
+  #IMAGES
+\*------------------------------------*/
+
+img {
+  width:         6rem;
+  height:        6rem;
+  border-radius: .5rem;
+  object-fit:    cover;
+}
 
 
 
@@ -179,35 +183,6 @@ h2 { font-size: 12px; }
   line-height:    1rem;
   letter-spacing: 0;
   color:          var(--primary-font-color);
-  margin:         0;
-}
-
-
-
-
-
-/*------------------------------------*\
-  #IMG
-\*------------------------------------*/
-
-img {
-  width:         6rem;
-  height:        6rem;
-  border-radius: .5rem;
-  object-fit:    cover;
-}
-
-
-
-
-
-
-/*------------------------------------*\
-  #BASE BACKGROUND-COLOR
-\*------------------------------------*/
-
-html {
-  background-color: var(--bg-primary);
 }
 
 
