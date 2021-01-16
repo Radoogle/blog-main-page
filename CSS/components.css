@@ -214,7 +214,19 @@
 \*------------------------------------*/
 
 .main-footer {
-  background-color: var(--bg-primary);
+  background-color: var(--bg-footer);
   display:          flex;
   justify-content:  center;
+  align-items:      center;
+  height:           5rem;
+  color:            var(--small-font-color);
+  text-transform:   uppercase;
+  font-size:        .6rem;
+  font-weight:      bold;
+  letter-spacing:   .12rem;
+  line-height:      .75rem;
 }
+
+  .important-text {
+    color: var(--secondary-font-color);
+  }
