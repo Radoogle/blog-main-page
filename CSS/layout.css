@@ -32,6 +32,10 @@
   grid-area: content;
 } 
 
+.thumbnail-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
 .side {
   grid-area: sidebar;

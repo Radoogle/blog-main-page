@@ -104,21 +104,13 @@ ul {
   margin: 0; /* [3] */
 }
 
-
-
-
-/* .credits,
-.post-title,
-.post-text,
-.thumbnail-title { */
 h1,
 h2,
 h3,
 p,
 small {
-  margin-bottom: .75rem; /* [4]] */
+  margin-bottom: .75rem; /* [4] */
 }
-
 
 a {
   text-decoration: none;
@@ -141,7 +133,6 @@ body {
   line-height:    .75rem; */
 }
 
-
 h1 { font-size: 2rem; }
 
 h2,
@@ -161,27 +152,18 @@ a {
   #IMAGES
 \*------------------------------------*/
 
+/**
+ * 1. Avem nevoie de această declarație display: block; pentru că altfel,
+ * va exista un spațiu gol de câțiva pixeli între imagine
+ * și restul conținutului. Asta din cauză că img tag este
+ * un inline element special implicit, afectat de proprietatea linie-înălțime.
+ * Pentru a evita asta, mai bine setezi ca imaginea să fie un element  block.
+ */
+
 img {
   width:         6rem;
   height:        6rem;
   border-radius: .5rem;
   object-fit:    cover;
+  display:       block; /* [1] */
 }
-
-
-
-
-/*------------------------------------*\
-  #PARAGRAPHS
-\*------------------------------------*/
-
-.thumbnail-text {
-  font-size:      .7rem;
-  line-height:    1rem;
-  letter-spacing: 0;
-  color:          var(--primary-font-color);
-}
-
-
-
-
