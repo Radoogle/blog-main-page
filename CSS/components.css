@@ -27,22 +27,29 @@
   display:          inline-block;
   width:            8rem;
   text-align:       center;
-  letter-spacing:   .12rem;    
-  line-height:      2rem;
   border:           .1rem solid; 
-  border-radius:    1.2rem;      
-  
+  border-radius:    1.2rem;
+     /*  */
+  letter-spacing:   .12rem;
+  height:           2rem;
+  line-height:      2rem; /* we make the line-height the same as height in order to have the text vertically aligned */
 }
 
-.primary-btn {
+  .primary-btn {
     border-color:     var(--thirdly-font-color);
     color:            var(--thirdly-font-color);
+    }
+
+  .secondary-btn {
+    border-color:     var(--btn-main-color);
+    color:            var(--secondary-font-color);
   }
 
-.secondary-btn {
-  border-color:     var(--btn-main-color);
-  color:            var(--secondary-font-color);
-}
+  .main-head__btn {
+    color:            var(--secondary-font-color);
+    background-color: var(--bg-secondary);
+    border-color:     #FFFFFF;
+  }
 
 
 
@@ -62,34 +69,15 @@
   padding:          0 15%;
 }
 
-  .main-head__btn {
-    text-transform:   uppercase;
-    text-align:       center;
-    vertical-align:   middle;
-    text-decoration:  none;
-    font-size:        .6rem;
-    font-weight:      bold;
-    letter-spacing:   .12rem;
-    line-height:      2rem;
-    color:            var(--secondary-font-color);
-    background-color: var(--bg-secondary);
-    border:           .1rem solid #FFFFFF;
-    border-radius:    1.2rem;
-    width:            8rem;
-    height:           2rem;
-  }
-
   .main-head__logo {
     color:           var(--thirdly-font-color);
-    text-transform:  uppercase;
-    text-decoration: none;
     margin-right:    37.14%; /* to keep it in the middle: (100vw - 15% - 15% - self-width) / 2*/
   }
 
-    .main-head__logo-img {
-      width:  9rem;
-      height: 2.5rem;
-    }
+  .main-head__logo-img {
+    width:  9rem;
+    height: 2.5rem;
+  }
 
 
 
@@ -108,20 +96,14 @@
   padding:          0 15%;
 }
 
-  .main-nav__btn {
-    text-decoration:  none;
-    text-transform:   uppercase;
-    font-size:        .6rem;
-    font-weight:      bold;
-    letter-spacing:   .12rem;
-    line-height:      .75rem;
+  .main-nav__link {
     color:            var(--primary-font-color);
     background-color: var(--bg-secondary);
     padding:          1.65rem 0 1.6rem 0;
     margin:           0 1.5rem;
   }
 
-  .main-nav__btn:hover {
+  .main-nav__link:hover {
     color:         var(--secondary-font-color);
     border-bottom: .2rem solid var(--secondary-font-color);
     padding:       1.65rem 0 1.4rem 0;
@@ -139,7 +121,6 @@
 .content {
   padding:   2rem 0 2rem 25.13%;
 }
-
 
 .post-title { 
   font-weight: bold;
