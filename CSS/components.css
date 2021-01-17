@@ -158,13 +158,12 @@
 \*------------------------------------*/
 
 /**
- * 1. fallback background color in case the img can't be loaded.
- * 2. for the last post in list we eliminate the bottom margin.
+ * 1. padding left to obtain 245px when width is 1600px.
+ * 2. fallback background color in case the img can't be loaded.
+ * 3. for the last post in list we eliminate the bottom margin.
  */
 
-.content {
-  padding:   2rem 0 2rem 25.13%;
-}
+.content { padding: 2rem 0 2rem 15.3125vw; } /* [1] */ 
 
   .content-post {
     background-color: var(--bg-secondary);
@@ -175,7 +174,7 @@
 
   .featured-post {
     color:      var(--thirdly-font-color);
-    background: var(--bg-secondary);    /* [1] */
+    background: var(--bg-secondary);    /* [2] */
     background: url(../assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg) no-repeat;
     background-size: cover;
   }
@@ -217,7 +216,7 @@
   border-top-right-radius: 0;
 }
 
-.another-post {     /* [2] */
+.another-post {     /* [3] */
   margin-bottom: 0;
 }
 
@@ -229,9 +228,11 @@
   #SIDEBAR
 \*------------------------------------*/
 
-.side {
-  padding:   2rem 41.17% 2rem 0;
-}
+/**
+ * 1. padding right to obtain 245px when width is 1600px.
+*/
+
+.side { padding: 2rem 15.3125vw 2rem 0; } /* [1] */
 
   .side-card {
     background-color: var(--bg-secondary);
