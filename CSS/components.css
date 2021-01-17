@@ -122,23 +122,36 @@
   padding:   2rem 0 2rem 25.13%;
 }
 
-.post-title { 
-  font-weight: bold;
-  line-height: 2.5rem; 
-  margin-top:  0;
-}
+  .content-post {
+    background-color: var(--bg-secondary);
+    border-radius:    .75rem;
+    margin-bottom:    1.5rem;
+    padding:          3rem 3rem 2.5rem 3rem;
+    letter-spacing:   0;
+  }
 
-.credits {
-  display:        inline-block;
-  font-weight:    bold;
-  letter-spacing: .12rem;
-}
+  .featured-post {
+    color:      var(--thirdly-font-color);
+    background: var(--bg-secondary);    /* fallback background */
+    background: url(../assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg) no-repeat;
+    background-size: cover;
+  }
 
-.content-post {
-  background-color: var(--bg-secondary);
-  border-radius:    .75rem;
-  margin-bottom:    1.5rem;
-}
+    .credits {
+      display:        inline-block;
+      font-weight:    bold;
+      letter-spacing: .12rem;
+      font-size:      .6rem;
+      text-transform: uppercase;
+    }
+
+  .post-title { line-height: 2.5rem; }
+
+  .post-text  { line-height: 1.5rem; }
+
+
+
+
 
 .thumbnail-wrapper {
   display: grid;
@@ -168,24 +181,7 @@
 }
 
 
-  .content-post {
-    /* min-height:     100vh; */
-    padding:        3rem 3rem 2.5rem 3rem;
-    letter-spacing: 0;
-  }
-
-  .featured-post {
-    color:      var(--thirdly-font-color);
-    background: var(--bg-secondary);    /* fallback background */
-    background: url(../assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg) no-repeat;
-    background-size: cover;
-  }
-
-  .featured-post-credits {
-    font-size:      .6rem;
-    text-transform: uppercase;
-    letter-spacing: .12rem;
-  }
+  
 
   .thumbnail-post {
     padding:  1rem;

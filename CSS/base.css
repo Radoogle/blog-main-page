@@ -114,7 +114,8 @@ ul {
 h1,
 h2,
 h3,
-p {
+p,
+small {
   margin-bottom: .75rem; /* [4]] */
 }
 
@@ -173,10 +174,6 @@ img {
 /*------------------------------------*\
   #PARAGRAPHS
 \*------------------------------------*/
-
-.post-text {
-  line-height: 1.5rem; 
-}
 
 .thumbnail-text {
   font-size:      .7rem;
