@@ -1,4 +1,15 @@
 /**
+ * PREZENTARE GENERALĂ
+ *
+ * Acest fișier descrie componentele care alcătuiesc site-ul.
+ * De la layout-ul interior la culoarea fontului etc.
+ *
+ * Incercand sa respecte regula BEM (Block–Element–Modifier) din
+ * CSS guidelines: https://cssguidelin.es/#bem-like-naming a lui Harry Roberts
+ */
+
+
+/**
  * CONTENTS
  *
  *
@@ -23,16 +34,18 @@
   #BUTTONS
 \*------------------------------------*/
 
+
+/*
+ * we make the line-height the same as height in order to have the text vertically aligned
+*/
+
 .btn {
   display:          inline-block;
   width:            8rem;
   text-align:       center;
   border:           .1rem solid; 
   border-radius:    1.2rem;
-     /*  */
-  letter-spacing:   .12rem;
-  height:           2rem;
-  line-height:      2rem; /* we make the line-height the same as height in order to have the text vertically aligned */
+  line-height:      2rem; /* [1] */
 }
 
   .primary-btn {
@@ -70,6 +83,14 @@
   #HEADER
 \*------------------------------------*/
 
+/**
+ *
+ * 1. Folosim acest right margin pentru ca logo-ul să apară în același loc
+ * la fel ca în prototipul de design.
+ * to keep it in the middle: (100vw - 15% - 15% - self-width) / 2
+ *
+ */
+
 .main-head {
   background-color: var(--bg-header);
   display:          flex;
@@ -82,7 +103,7 @@
 
   .main-head__logo {
     color:           var(--thirdly-font-color);
-    margin-right:    37.14%; /* to keep it in the middle: (100vw - 15% - 15% - self-width) / 2*/
+    margin-right:    37.14%; /* [1] */
   }
 
   .main-head__logo-img {
@@ -97,6 +118,11 @@
 /*------------------------------------*\
   #NAVIGATION
 \*------------------------------------*/
+
+/**
+ * 1. Acest padding este necesar pentru a putea afișa
+ * bara mov a efectului hover în locul adecvat.
+ */
 
 .main-nav {
   background-color: var(--bg-secondary);
@@ -119,7 +145,7 @@
   .main-nav__link:hover {
     color:         var(--secondary-font-color);
     border-bottom: .2rem solid var(--secondary-font-color);
-    padding:       1.65rem 0 1.4rem 0;
+    padding:       1.65rem 0 1.4rem 0; /* [1] */
   }
 
 
@@ -130,6 +156,11 @@
 /*------------------------------------*\
   #MAIN CONTENT
 \*------------------------------------*/
+
+/**
+ * 1. fallback background color in case the img can't be loaded.
+ * 2. for the last post in list we eliminate the bottom margin.
+ */
 
 .content {
   padding:   2rem 0 2rem 25.13%;
@@ -144,7 +175,7 @@
 
   .featured-post {
     color:      var(--thirdly-font-color);
-    background: var(--bg-secondary);    /* fallback background */
+    background: var(--bg-secondary);    /* [1] */
     background: url(../assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg) no-repeat;
     background-size: cover;
   }
@@ -186,7 +217,7 @@
   border-top-right-radius: 0;
 }
 
-.another-post {     /* the last post in list */
+.another-post {     /* [2] */
   margin-bottom: 0;
 }
 

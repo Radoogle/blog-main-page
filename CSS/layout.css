@@ -1,12 +1,23 @@
+/**
+ * PREZENTARE GENERALĂ
+ *
+ * Acest fișier gestionează schema (layout) website-ului. În loc să seteze
+ * schemele componentelor pe rând, creem un sistem separat
+ * care are un singur obiectiv—de a spune fiecărui element
+ * ce dimensiune trebuie să aibă și unde trebuie să apară.
+ */ 
+ 
+ 
+ 
  /**
  * CONTENTS
  *
  * LAYOUT
  * Elements.............Rules for the container and items
- * Modifiers............
+ * Images...............Floating just the thumbnail images and clearing the float after.
  *
- * WHITESPACES
- * Whitespaces..........Whitespaces between items.
+ * GRID GAPS
+ * Grid gaps............Whitespaces between columns in grids.
  */
 
 
@@ -81,11 +92,14 @@
 
 
 /*------------------------------------*\
-  #WHITESPACES AND GRID GAPS
+  #GRID GAPS
 \*------------------------------------*/
 
+/**
+* 1. row gap = 0 and column gap = 1.5rem.
+*/
 
 .page,
 .thumbnail-wrapper {
-  gap: 0 30px;   /* row gap = 0 and column gap = 30px */
+  gap: 0 1.5rem;   /* [1] */
 }

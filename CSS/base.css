@@ -23,8 +23,7 @@
  * BASE STYLES
  * Headings.............H1, H2, H3 styles.
  * Links, buttons.......Base styles.
- * Images...............dimensions, radius and object-fit
- * Paragraphs...........will see.
+ * Images...............dimensions, radius and object-fit.
  */
 
 
@@ -129,9 +128,15 @@ body {
   font-family:      'Montserrat', sans-serif;
   color:            var(--primary-font-color);
   background-color: var(--bg-primary);
-  /* letter-spacing: .12rem;
-  line-height:    .75rem; */
 }
+
+
+
+
+
+/*------------------------------------*\
+  #HEADINGS AND LINKS/BUTTONS
+\*------------------------------------*/
 
 h1 { font-size: 2rem; }
 
