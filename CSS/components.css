@@ -85,9 +85,9 @@
 
 /**
  *
- * 1. Folosim acest right margin pentru ca logo-ul să apară în același loc
+ * 1. Folosim acest padding left pentru ca logo-ul să apară în același loc
  * la fel ca în prototipul de design.
- * to keep it in the middle: (100vw - 15% - 15% - self-width) / 2
+ * to keep it in the middle: (100%  - self-width) / 2
  *
  */
 
@@ -98,13 +98,11 @@
   flex-wrap:        wrap;
   align-items:      center;
   height:           4rem;
-  padding:          0 15%;
+  padding:          0 calc(50% - 4.5rem) 0 12.5%; /* [1] */
+  width: 100%;
 }
 
-  .main-head__logo {
-    color:           var(--thirdly-font-color);
-    margin-right:    37.14%; /* [1] */
-  }
+  .main-head__logo { color: var(--thirdly-font-color); }
 
   .main-head__logo-img {
     width:  9rem;
@@ -157,13 +155,13 @@
   #MAIN CONTENT
 \*------------------------------------*/
 
-/**
- * 1. padding left of 15.3125vw to obtain 245px when width is 1600px.
- * 2. fallback background color in case the img can't be loaded.
- * 3. for the last post in list we eliminate the bottom margin.
+/** 
+ * 1. fallback background color in case the img can't be loaded.
+ * 2. for the last post in list we eliminate the bottom margin.
  */
 
-.content { padding: 2rem 0 2rem 15vw; } /* [1] */ 
+/* .content { padding: 2rem 0 2rem 22.50%; } */
+.content { padding: 2rem 0 2rem 12.5vw; }
 
   .content-post {
     background-color: var(--bg-secondary);
@@ -174,7 +172,7 @@
 
   .featured-post {
     color:      var(--thirdly-font-color);
-    background: var(--bg-secondary);    /* [2] */
+    background: var(--bg-secondary);    /* [1] */
     background: url(../assets/roberto-nickson-5ui0tfMC5ts-unsplash.jpg) no-repeat;
     background-size: cover;
   }
@@ -216,7 +214,7 @@
   border-top-right-radius: 0;
 }
 
-.another-post {     /* [3] */
+.another-post {     /* [2] */
   margin-bottom: 0;
 }
 
@@ -228,11 +226,8 @@
   #SIDEBAR
 \*------------------------------------*/
 
-/**
- * 1. padding right of 15.3125vw to obtain 245px when width is 1600px.
-*/
-
-.side { padding: 2rem 10vw 2rem 0; } /* [1] */
+/* .side { padding: 2rem 37.61% 2rem 0; } */
+.side { padding: 2rem 12.5vw 2rem 0; }
 
   .side-card {
     background-color: var(--bg-secondary);
